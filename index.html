@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    <title>Lista Email</title>
+  </head>
+  <body>
+
+    <h1>Generatore di email</h1>
+
+    <ol id="root">
+      <li v-for="(element) in emails" v-if="emails.length == 10">{{ element }}</li>
+    </ol>
+
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
